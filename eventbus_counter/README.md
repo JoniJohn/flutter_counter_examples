@@ -1,32 +1,20 @@
 # eventbus_counter
 
-A Flutter Projects .
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
 ## Steps
 1. Emitting
-- locator
-- mixin EventEmitter
-- Event
-- Concrete Implementation
+    - locator
+    - mixin EventEmitter
+    - Event
+    - Concrete Implementation
 
 2. Listening
-- EventListener
-- EventAware
+    - EventListener
+    - EventAware
 
 3. Observing
-> an event observer listens to all events
-- abstract EventObserver
-- Concrete Observer extends EventObserver
+**TIP:**  _an event observer listens to all events_
+    - abstract EventObserver
+    - Concrete Observer extends EventObserver
+
+## In this application we also cover tests
+The default test has been modified so that it can recognize the new **Event Bus** dependency. Another test has been written to test that only one event is emitted when the counter button is clicked onced
